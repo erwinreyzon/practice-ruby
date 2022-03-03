@@ -2,6 +2,7 @@ require "./store_discount.rb"
 require "./store_item.rb"
 
 class Food < Item
+  include Discount
   attr_reader :shelf_life
   attr_writer :shelf_life
   def initialize(input_item)

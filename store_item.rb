@@ -1,6 +1,7 @@
 require "./store_discount.rb"
 
 class Item
+  include Discount
   attr_reader :size, :color, :price
   attr_writer :size, :price
 
